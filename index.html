@@ -1,9 +1,55 @@
-# VercelTeste
 <!DOCTYPE html>
 <head>
-  
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      background-color: dodgerblue;
+      padding: 10px;
+    }
+    .grid-container > * {
+      background-color: #f1f1f1;
+      color:#000;
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
+    #header {
+      grid-column: 1 / span 5;
+    }
+    #side{
+      grid-column: 1;
+      grid-row-start: 2;
+    }
+    #main{
+      grid-column: 2 / span 4;
+      grid-row-start: 2;
+    }
+    .imgContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .imgContainer img{
+      max-width: 17%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Portfólio</h1>
-  <p>teste</p>
+  <section class="grid-container">
+    <header id="header">
+      <p>header text</p>
+    </header>
+    <article id="main">
+      <p>main text</p>
+    </article>
+    <section id="side">
+      <h1>Contatos</h1>
+      <section class="imgContainer">
+        <img src=".\gitlogo.png" alt="GitHubIcon">
+        <a href="https://github.com/Hiroshi-Yamashita-Santos">GitHub</a>
+      </section>
+    </section>
+  </section>
 </body>
