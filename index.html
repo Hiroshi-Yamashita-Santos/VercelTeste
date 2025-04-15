@@ -17,10 +17,18 @@
     a{
       font-size: 1.5vw;
     }
+    #topHeader{
+      border-bottom: 1.5vw solid mediumseagreen;  
+    }
     .footer-grid{
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
+      border-top: 1.5vw solid mediumseagreen;
+    }
+    .footer-grid > *{
+      margin: 0;
+      flex: 1;
     }
     .main {
       gap: 1vw;
@@ -40,7 +48,7 @@
       align-items: center;
     }
     .imgContainer img{
-      max-width: 15%;
+      max-width: 13%;
     }
     .imgSet{
       display: flex;
@@ -54,7 +62,7 @@
 </head>
 <body>
   <section class="main">
-    <header>
+    <header id="topHeader">
       <h1>Hiroshi Yamashita dos Santos</h1>
     </header>
     <article>
@@ -70,8 +78,8 @@
       </p>
       <h2>Programação</h2>
       <section class="imgSet">
-        <img src="\unityLogo.png" alt="Unity Logo">
-        <img src="\visualStudioLogo.png" alt="VS Logo">
+        <img src=".\unityLogo.png" alt="Unity Logo">
+        <img src=".\visualStudioLogo.png" alt="VS Logo">
         <img src=".\pythonLogo.png" alt="Python Logo">
       </section>
       <p>
@@ -154,4 +162,3 @@
     </footer>
   </section>
 </body>
-
